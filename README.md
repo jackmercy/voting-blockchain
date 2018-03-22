@@ -1,12 +1,6 @@
-[![Gitter](https://badges.gitter.im/JoinChat.svg)](https://gitter.im/linnovate/mean?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-
 # [![MEAN Logo](http://mean.io/wp-content/themes/twentysixteen-child/images/meanlogo.png)](http://mean.io/) MEAN<sup>2</sup>
 
 #### The Full Stack Javascript Framework.
-
-MEAN started out as a combination of MongoDB, ExpressJS, AngularJS and Node.js.   
-With <strong>MEAN<sup>2</sup></strong> we are providing the ability to mix and match additional frontend frameworks, databases and technologies.
-We aim to create a robust, flexible and scalable full-stack javascript solution.
 
 The default MEAN stack you get out of the box can work with either Angular or React and is built with the following technologies...
 

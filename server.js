@@ -9,15 +9,18 @@ import app from './server/config/express';
 
 const debug = require('debug')('express-mongoose-es6-rest-api:index');
 
-// make bluebird default Promise
+/* // make bluebird default Promise
 Promise = require('bluebird'); // eslint-disable-line no-global-assign
 
 // plugin bluebird promise in mongoose
-mongoose.Promise = Promise;
+mongoose.Promise = Promise; */
 
 // connect to mongo db
 const mongoUri = config.mongo.host;
-mongoose.connect(mongoUri, { server: { socketOptions: { keepAlive: 1 } } });
+console.log(mongoUri);
+mongoose.connect(mongoUri, { server: { socketOptions: { keepAlive: 1 } } })
+    .then( () => console.log('connection succesful to mongodb at port: ' + config.mongo.host));
+
 mongoose.connection.on('error', () => {
   throw new Error(`unable to connect to database: ${mongoUri}`);
 });

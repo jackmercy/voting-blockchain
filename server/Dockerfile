@@ -1,8 +1,6 @@
 # take default image of node boron i.e  node 6.x
 FROM node:6.10.1
 
-MAINTAINER Kunal Kapadia <kunalkapadia12@gmail.com>
-
 # create app directory in container
 RUN mkdir -p /app
 
