@@ -5,7 +5,7 @@
 The default MEAN stack you get out of the box can work with either Angular or React and is built with the following technologies...
 
 * [Node.js](https://nodejs.org/en/)
-* [Angular4 web starter](https://github.com/AngularClass/angular-starter)
+* [Angular](https://angular.io/)
 * [MongoDB](https://www.mongodb.com)
 * [Express](https://expressjs.com/)
 * [Innograph](https://github.com/linnovate/innograph) (uses GraphQL for schema standartization)

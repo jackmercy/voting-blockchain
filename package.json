@@ -8,8 +8,8 @@
     "webpack",
     "typescript"
   ],
-  "author": "Lior Kesos <lior@linnovate.net>",
-  "homepage": "http://mean.io",
+  "author": "",
+  "homepage": "",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -207,10 +207,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/AngularClass/angular-starter.git"
+    "url": ""
   },
   "bugs": {
-    "url": "https://github.com/AngularClass/angular-starter/issues"
+    "url": ""
   },
   "engines": {
     "node": "6.11.3",
