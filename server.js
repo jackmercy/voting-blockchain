@@ -18,8 +18,8 @@ mongoose.Promise = Promise; */
 // connect to mongo db
 const mongoUri = config.mongo.host;
 console.log(mongoUri);
-mongoose.connect(mongoUri, { server: { socketOptions: { keepAlive: 1 } } })
-    .then( () => console.log('connection succesful to mongodb at port: ' + config.mongo.host));
+mongoose.connect(mongoUri)
+    .then( () => console.log('connection succesful to mongodb at: ' + config.mongo.host));
 
 mongoose.connection.on('error', () => {
   throw new Error(`unable to connect to database: ${mongoUri}`);

@@ -12,7 +12,7 @@
   "homepage": "http://mean.io",
   "license": "MIT",
   "scripts": {
-    "ng":"ng",
+    "ng": "ng",
     "build:aot:prod": "npm run clean:dist && npm run clean:aot && cross-env BUILD_AOT=1 npm run webpack -- --config config/webpack.prod.js  --progress --profile --bail",
     "build:aot": "npm run build:aot:prod",
     "build:dev": "npm run clean:dist && npm run webpack -- --config config/webpack.dev.js --progress --profile",
@@ -116,7 +116,7 @@
     "joi": "^10.5.2",
     "material": "^0.1.1",
     "method-override": "^2.3.9",
-    "mongoose": "^4.10.6",
+    "mongoose": "^5.0.0",
     "morgan": "^1.8.2",
     "preboot": "^6.0.0-beta.3",
     "react": "^15.6.1",

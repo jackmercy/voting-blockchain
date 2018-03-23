@@ -1,5 +1,5 @@
-# [![MEAN Logo](http://mean.io/wp-content/themes/twentysixteen-child/images/meanlogo.png)](http://mean.io/) MEAN<sup>2</sup>
-
+# ![MEAN Logo](http://mean.io/wp-content/themes/twentysixteen-child/images/meanlogo.png) Voting on Blockchain
+#### This project is using MEAN
 #### The Full Stack Javascript Framework.
 
 The default MEAN stack you get out of the box can work with either Angular or React and is built with the following technologies...
@@ -29,7 +29,11 @@ To start your application with MEAN, you need to clone the base MEAN repository 
 ```
 git clone --depth 1 https://github.com/linnovate/mean.git  
 cd mean
-npm install  
+npm install
+mongod
+```
+Then open another terminal
+```
 npm start  
 ```
 If all the packages and modules installed successfully, your default web browser will open and you can see the default MEAN application at `http://localhost:3000`. This is the default port unless you change that manually.
