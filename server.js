@@ -18,12 +18,12 @@ mongoose.Promise = Promise; */
 // connect to mongo db
 const mongoUri = config.mongo.host;
 console.log(mongoUri);
-mongoose.connect(mongoUri)
+/*mongoose.connect(mongoUri)
     .then( () => console.log('connection succesful to mongodb at: ' + config.mongo.host));
 
 mongoose.connection.on('error', () => {
   throw new Error(`unable to connect to database: ${mongoUri}`);
-});
+});*/
 
 // print mongoose logs in dev env
 if (config.MONGOOSE_DEBUG) {

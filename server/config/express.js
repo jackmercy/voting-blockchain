@@ -15,13 +15,19 @@ import config from './config';
 import APIError from '../helpers/APIError';
 import path from 'path';
 import appRoot from 'app-root-path';
+
+import Web3 from 'web3';
+import fs from 'fs';
+import truffleContract from 'truffle-contract';
+import votingJson from './Voting.json';
+
 // import innograph from 'innograph'
 
 
 const app = express();
 
 if (config.env === 'development') {
-  app.use(logger('dev'));
+    app.use(logger('dev'));
 }
 
 // parse body params and attache them to req.body
@@ -93,5 +99,17 @@ app.use((err, req, res, next) => // eslint-disable-line no-unused-vars
     stack: config.env === 'development' ? err.stack : {}
   })
 );
+
+
+
+global.web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:9545"));
+var abiDefinition = votingJson.abi;
+var VotingContract = web3.eth.contract(abiDefinition);
+
+//Get contract instance
+global.contractInstance = VotingContract.at('0x345ca3e014aaf5dca488057592ee47305d9b3e10');
+console.log(contractInstance);
+console.log('successfully connected to blockchain');
+
 
 export default app;
